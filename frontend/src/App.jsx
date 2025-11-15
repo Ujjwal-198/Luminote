@@ -1,5 +1,6 @@
 import './App.css'
 import Layout from './Components/Layout.jsx';
+import RedirectHandler from './Components/RedirectHandler.jsx';
 import { Route, Routes } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
@@ -30,7 +31,8 @@ function App() {
 
 
   return (
-    <Routes>
+    <RedirectHandler>
+      <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/signup" element={<Signup />} />
@@ -63,8 +65,11 @@ function App() {
           <Route path="/upload" element={<Upload />} />
           <Route path="/uploadDetails" element={<UploadDetails />} />
         </Route>
+        <Route path="/index.html" element={<Home />} />
+        <Route path="*" element={<Home />} />
       </Route>
-    </Routes>
+      </Routes>
+    </RedirectHandler>
   )
 }
 
