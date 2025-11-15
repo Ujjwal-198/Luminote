@@ -32,7 +32,8 @@ function App() {
 
   return (
     <RedirectHandler>
-      <Routes>
+      <div style={{ width: '100%', minHeight: '100vh', fontSize: '16px' }}>
+        <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/signup" element={<Signup />} />
@@ -68,7 +69,8 @@ function App() {
         <Route path="/index.html" element={<Home />} />
         <Route path="*" element={<Home />} />
       </Route>
-      </Routes>
+        </Routes>
+      </div>
     </RedirectHandler>
   )
 }
