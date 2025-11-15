@@ -176,8 +176,26 @@ function Step3({ getValues }) {
 const Register = () => {
     const [currentStep, setCurrentStep] = useState(0);
     const { register, handleSubmit, formState: { errors }, trigger, getValues, setValue, watch } = useForm({
-        mode: 'onChange'
+        mode: 'onChange',
+        defaultValues: {
+            name: '',
+            email: '',
+            password: '',
+            university: '',
+            course: '',
+            branch: ''
+        }
     });
+    
+    // Register all fields immediately
+    useEffect(() => {
+        register('name', { required: 'Name is required' });
+        register('email', { required: 'Email is required' });
+        register('password', { required: 'Password is required' });
+        register('university', { required: 'University is required' });
+        register('course', { required: 'Course is required' });
+        register('branch', { required: 'Branch is required' });
+    }, [register]);
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const { authenticated, loading, error } = useSelector((state) => state.user);
@@ -214,8 +232,22 @@ const Register = () => {
 
     const onSubmit = async (data) => {
         console.log('Form data being submitted:', data);
+        console.log('All form values:', getValues());
+        
+        // Ensure all fields are present
+        const formData = {
+            name: data.name || getValues('name'),
+            email: data.email || getValues('email'),
+            password: data.password || getValues('password'),
+            university: data.university || getValues('university'),
+            course: data.course || getValues('course'),
+            branch: data.branch || getValues('branch')
+        };
+        
+        console.log('Final form data:', formData);
+        
         try {
-            await dispatch(handleSignup(data)).unwrap();
+            await dispatch(handleSignup(formData)).unwrap();
             navigate('/dashboard');
         } catch (error) {
             console.log('Signup error:', error);
