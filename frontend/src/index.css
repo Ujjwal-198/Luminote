@@ -1,1 +1,25 @@
-@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n/* Fix for deployment sizing issues */\n* {\n  box-sizing: border-box;\n}\n\nhtml {\n  font-size: 16px;\n  -webkit-text-size-adjust: 100%;\n  -ms-text-size-adjust: 100%;\n}\n\nbody {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  min-height: 100vh;\n  overflow-x: hidden;\n}\n\n#root {\n  width: 100%;\n  min-height: 100vh;\n}
+@import 'tailwindcss';
+
+/* Fix for deployment sizing issues */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
