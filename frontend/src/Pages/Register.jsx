@@ -187,7 +187,17 @@ function Step3({ getValues }) {
 
 const Register = () => {
     const [currentStep, setCurrentStep] = useState(0);
-    const { register, handleSubmit, formState: { errors }, trigger, getValues } = useForm();
+    const { register, handleSubmit, formState: { errors }, trigger, getValues } = useForm({
+        mode: 'onChange',
+        defaultValues: {
+            name: '',
+            email: '',
+            password: '',
+            university: '',
+            course: '',
+            branch: ''
+        }
+    });
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const { authenticated, loading, error } = useSelector((state) => state.user);
@@ -282,6 +292,13 @@ const Register = () => {
                 {/* Form */}
                 <div className='bg-zinc-800 border border-zinc-700 rounded-2xl p-8 shadow-lg'>
                     <form onSubmit={handleSubmit(onSubmit)}>
+                        {/* Hidden inputs to ensure all fields are registered */}
+                        <input type="hidden" {...register("name")} />
+                        <input type="hidden" {...register("email")} />
+                        <input type="hidden" {...register("password")} />
+                        <input type="hidden" {...register("university")} />
+                        <input type="hidden" {...register("course")} />
+                        <input type="hidden" {...register("branch")} />
                         {renderStep()}
 
                         {error && (
