@@ -4,10 +4,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getDocuments } from '../features/fileSlice';
 import { Button, DocumentCard } from './index.js';
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const RecentUploads = () => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
     const { documents, loading } = useSelector((state) => state.files);
 
     useEffect(() => {
@@ -46,7 +47,7 @@ const RecentUploads = () => {
             }
             {
                 recentFiles.length >= 6 && <div className='flex align-middle justify-center items-center w-full my-3'>
-                    <Button onClick={() => window.location.href = '/allUploads'} className='flex align-middle justify-center items-center w-full gap-2 rounded-lg text-md font-semibold' >
+                    <Button onClick={() => navigate('/allUploads')} className='flex align-middle justify-center items-center w-full gap-2 rounded-lg text-md font-semibold' >
                         View All <MdKeyboardArrowRight />
                     </Button>
                 </div>
