@@ -6,25 +6,7 @@ import logger from '../config/logger.js';
 
 export const handleSignup = async (req, res) => {
     try {
-        console.log('=== SIGNUP REQUEST START ===');
-        console.log('Request headers:', req.headers);
-        console.log('Request body type:', typeof req.body);
-        console.log('Request body keys:', Object.keys(req.body || {}));
-        console.log('Full request body:', JSON.stringify(req.body, null, 2));
-        console.log('Request body stringified:', JSON.stringify(req.body));
-        console.log('Request body direct:', req.body);
-        console.log('Body has university?', 'university' in req.body);
-        console.log('Body university value:', req.body.university);
-        
         const { name, email, password, university, course, branch } = req.body;
-        console.log('Destructured values:');
-        console.log('- name:', name, typeof name);
-        console.log('- email:', email, typeof email);
-        console.log('- password:', password ? '***' : 'undefined', typeof password);
-        console.log('- university:', university, typeof university);
-        console.log('- course:', course, typeof course);
-        console.log('- branch:', branch, typeof branch);
-        console.log('=== SIGNUP REQUEST DATA END ===');
         if (!name || !email || !password) {
             return res.status(400).json(
                 {
@@ -54,10 +36,7 @@ export const handleSignup = async (req, res) => {
 
         const hashedPassword = await bcrypt.hash(password, 10);
         
-        const userData = { name, email, password: hashedPassword, university, course, branch };
-        console.log('Creating user with data:', JSON.stringify(userData, null, 2));
-        
-        const user = await User.create(userData);
+        const user = await User.create({ name, email, password: hashedPassword, university, course, branch });
         console.log("User created successfully: ", user);
 
         const token = jwt.sign(

@@ -5,7 +5,7 @@ import { validate, registerValidation, loginValidation } from '../middleware/val
 
 const router = express.Router();
 
-router.post('/signup', authLimiter, handleSignup);
+router.post('/signup', authLimiter, validate(registerValidation), handleSignup);
 router.post('/login', authLimiter, validate(loginValidation), handleLogin);
 router.post('/logout', handleLogout);
 router.get('/getuser', handleGetUser);

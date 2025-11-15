@@ -24,23 +24,13 @@ export const fileUploadValidation = Joi.object({
 
 export const validate = (schema) => {
     return (req, res, next) => {
-        console.log('=== VALIDATION MIDDLEWARE ===');
-        console.log('Request body in validation:', JSON.stringify(req.body, null, 2));
-        
-        const { error, value } = schema.validate(req.body);
-        
-        console.log('Validation error:', error);
-        console.log('Validation value:', JSON.stringify(value, null, 2));
-        
+        const { error } = schema.validate(req.body);
         if (error) {
-            console.log('Validation failed:', error.details[0].message);
             return res.status(400).json({
                 success: false,
                 message: error.details[0].message
             });
         }
-        
-        console.log('Validation passed, proceeding to controller');
         next();
     };
 };
