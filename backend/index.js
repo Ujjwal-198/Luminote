@@ -50,11 +50,10 @@ app.use(cors({
 
 app.use(cookieParser())
 
-app.use('/api/files', FileRoutes)
-
 app.use(express.json({ limit: process.env.BODY_LIMIT || '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: process.env.BODY_LIMIT || '50mb' }));
 
+app.use('/api/files', FileRoutes)
 app.use('/api/user', UserRoutes)
 app.use('/', (req, res) => {
     res.send('API is running')

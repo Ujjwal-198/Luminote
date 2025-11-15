@@ -1,5 +1,5 @@
 import React from 'react';
-import unauthorizedIllustration from '../assets/UnauthorizedIllustration.png';
+import unauthorizedIllustration from '../assets/unauthorizedIllustration.png';
 import { Button } from '../Components';
 import { useNavigate } from 'react-router-dom';
 
