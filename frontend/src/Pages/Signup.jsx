@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button, Loading } from '../Components';
 import { LuUserRoundPlus } from "react-icons/lu";
-import SignupIllustration from '../assets/SignupIllustration.png';
+import SignupIllustration from '../assets/signupIllustration.png';
 import { handleSignup } from '../features/userSlice.js';
 import { useNavigate } from 'react-router-dom';
 const Signup = () => {
