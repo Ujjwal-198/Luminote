@@ -6,8 +6,8 @@ import logger from '../config/logger.js';
 
 export const handleSignup = async (req, res) => {
     try {
-        const { name, email, password, universityName: university, course, branch } = req.body;
-        console.log(name, email, password);
+        const { name, email, password, university, course, branch } = req.body;
+        console.log('Received signup data:', { name, email, password: '***', university, course, branch });
         if (!name || !email || !password) {
             return res.status(400).json(
                 {
