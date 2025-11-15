@@ -223,11 +223,12 @@ const Register = () => {
     };
 
     const onSubmit = async (data) => {
+        console.log('Form data being submitted:', data);
         try {
             await dispatch(handleSignup(data)).unwrap();
             navigate('/dashboard');
         } catch (error) {
-            console.log(error);
+            console.log('Signup error:', error);
         }
     };
 
