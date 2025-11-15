@@ -80,7 +80,7 @@ function Step1({ register, errors, clearErrorOnInput }) {
     );
 }
 
-function Step2({ register, errors, clearErrorOnInput, setValue }) {
+function Step2({ register, errors, clearErrorOnInput }) {
     return (
         <div className='space-y-6'>
             <div className='text-center mb-6'>
@@ -98,10 +98,6 @@ function Step2({ register, errors, clearErrorOnInput, setValue }) {
                         type="text"
                         id="university"
                         {...register("university", { required: "University name is required" })}
-                        onChange={(e) => {
-                            clearErrorOnInput();
-                            setValue('university', e.target.value);
-                        }}
                         className='w-full px-4 py-3 bg-zinc-900 border border-zinc-600 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition duration-300'
                         placeholder="Enter your university/college name"
                     />
@@ -114,10 +110,6 @@ function Step2({ register, errors, clearErrorOnInput, setValue }) {
                         type="text"
                         id="course"
                         {...register("course", { required: "Course is required" })}
-                        onChange={(e) => {
-                            clearErrorOnInput();
-                            setValue('course', e.target.value);
-                        }}
                         className='w-full px-4 py-3 bg-zinc-900 border border-zinc-600 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition duration-300'
                         placeholder="e.g., B.Tech, M.Tech, BCA"
                     />
@@ -130,10 +122,6 @@ function Step2({ register, errors, clearErrorOnInput, setValue }) {
                         type="text"
                         id="branch"
                         {...register("branch", { required: "Branch is required" })}
-                        onChange={(e) => {
-                            clearErrorOnInput();
-                            setValue('branch', e.target.value);
-                        }}
                         className='w-full px-4 py-3 bg-zinc-900 border border-zinc-600 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition duration-300'
                         placeholder="e.g., Computer Science, IT, ECE"
                     />
@@ -239,7 +227,7 @@ const Register = () => {
             case 0:
                 return <Step1 register={register} errors={errors} clearErrorOnInput={clearErrorOnInput} />;
             case 1:
-                return <Step2 register={register} errors={errors} clearErrorOnInput={clearErrorOnInput} setValue={setValue} />;
+                return <Step2 register={register} errors={errors} clearErrorOnInput={clearErrorOnInput} />;
             case 2:
                 return <Step3 getValues={getValues} />;
             default:
