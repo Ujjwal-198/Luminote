@@ -80,7 +80,7 @@ function Step1({ register, errors, clearErrorOnInput }) {
     );
 }
 
-function Step2({ register, errors, clearErrorOnInput }) {
+function Step2({ register, errors, clearErrorOnInput, setValue }) {
     return (
         <div className='space-y-6'>
             <div className='text-center mb-6'>
@@ -100,7 +100,7 @@ function Step2({ register, errors, clearErrorOnInput }) {
                         {...register("university", { required: "University name is required" })}
                         onChange={(e) => {
                             clearErrorOnInput();
-                            register('university').onChange(e);
+                            setValue('university', e.target.value);
                         }}
                         className='w-full px-4 py-3 bg-zinc-900 border border-zinc-600 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition duration-300'
                         placeholder="Enter your university/college name"
@@ -116,7 +116,7 @@ function Step2({ register, errors, clearErrorOnInput }) {
                         {...register("course", { required: "Course is required" })}
                         onChange={(e) => {
                             clearErrorOnInput();
-                            register('course').onChange(e);
+                            setValue('course', e.target.value);
                         }}
                         className='w-full px-4 py-3 bg-zinc-900 border border-zinc-600 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition duration-300'
                         placeholder="e.g., B.Tech, M.Tech, BCA"
@@ -132,7 +132,7 @@ function Step2({ register, errors, clearErrorOnInput }) {
                         {...register("branch", { required: "Branch is required" })}
                         onChange={(e) => {
                             clearErrorOnInput();
-                            register('branch').onChange(e);
+                            setValue('branch', e.target.value);
                         }}
                         className='w-full px-4 py-3 bg-zinc-900 border border-zinc-600 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition duration-300'
                         placeholder="e.g., Computer Science, IT, ECE"
@@ -187,16 +187,8 @@ function Step3({ getValues }) {
 
 const Register = () => {
     const [currentStep, setCurrentStep] = useState(0);
-    const { register, handleSubmit, formState: { errors }, trigger, getValues } = useForm({
-        mode: 'onChange',
-        defaultValues: {
-            name: '',
-            email: '',
-            password: '',
-            university: '',
-            course: '',
-            branch: ''
-        }
+    const { register, handleSubmit, formState: { errors }, trigger, getValues, setValue, watch } = useForm({
+        mode: 'onChange'
     });
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -247,7 +239,7 @@ const Register = () => {
             case 0:
                 return <Step1 register={register} errors={errors} clearErrorOnInput={clearErrorOnInput} />;
             case 1:
-                return <Step2 register={register} errors={errors} clearErrorOnInput={clearErrorOnInput} />;
+                return <Step2 register={register} errors={errors} clearErrorOnInput={clearErrorOnInput} setValue={setValue} />;
             case 2:
                 return <Step3 getValues={getValues} />;
             default:
@@ -292,13 +284,7 @@ const Register = () => {
                 {/* Form */}
                 <div className='bg-zinc-800 border border-zinc-700 rounded-2xl p-8 shadow-lg'>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                        {/* Hidden inputs to ensure all fields are registered */}
-                        <input type="hidden" {...register("name")} />
-                        <input type="hidden" {...register("email")} />
-                        <input type="hidden" {...register("password")} />
-                        <input type="hidden" {...register("university")} />
-                        <input type="hidden" {...register("course")} />
-                        <input type="hidden" {...register("branch")} />
+
                         {renderStep()}
 
                         {error && (
