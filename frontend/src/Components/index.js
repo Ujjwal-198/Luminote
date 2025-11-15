@@ -6,7 +6,7 @@ import Button from "./Button.jsx";
 import FileUploader from "./FileUploader.jsx";
 import Loading from "./Loading.jsx";
 import ProtectedRoutes from "./ProtectedRoutes.jsx";
-import RecentUploads from "./recentUploads.jsx";
+import RecentUploads from "./RecentUploads.jsx";
 import DocumentCard from "./DocumentCard.jsx";
 import NoUploadsYet from "./NoUploadsYet.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
