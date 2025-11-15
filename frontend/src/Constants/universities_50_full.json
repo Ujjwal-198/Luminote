@@ -1,0 +1,502 @@
+[
+  {
+    "id": "uni1",
+    "name": "Indian Institute of Science, Bengaluru",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Master of Science (MSc)",
+      "Doctor of Philosophy (PhD)",
+      "Integrated MTech"
+    ]
+  },
+  {
+    "id": "uni2",
+    "name": "Jawaharlal Nehru University, New Delhi",
+    "courses": [
+      "Bachelor of Arts (BA)",
+      "Master of Arts (MA)",
+      "Master of Philosophy (MPhil)",
+      "PhD"
+    ]
+  },
+  {
+    "id": "uni3",
+    "name": "Jamia Millia Islamia, New Delhi",
+    "courses": [
+      "Bachelor of Commerce (BCom)",
+      "Bachelor of Business Administration (BBA)",
+      "Master of Business Administration (MBA)",
+      "PhD"
+    ]
+  },
+  {
+    "id": "uni4",
+    "name": "Banaras Hindu University, Varanasi",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Master of Technology (MTech)",
+      "Bachelor of Arts (BA)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni5",
+    "name": "University of Delhi, New Delhi",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Commerce (BCom)",
+      "Master of Arts (MA)",
+      "Master of Commerce (MCom)"
+    ]
+  },
+  {
+    "id": "uni6",
+    "name": "Aligarh Muslim University, Aligarh",
+    "courses": [
+      "Bachelor of Engineering (BE)",
+      "Bachelor of Science (BSc)",
+      "Master of Technology (MTech)",
+      "PhD"
+    ]
+  },
+  {
+    "id": "uni7",
+    "name": "Jadavpur University, Kolkata",
+    "courses": [
+      "Bachelor of Architecture (BArch)",
+      "Bachelor of Engineering (BE)",
+      "Master of Engineering (ME)",
+      "PhD"
+    ]
+  },
+  {
+    "id": "uni8",
+    "name": "Anna University, Chennai",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Master of Technology (MTech)",
+      "Master of Business Administration (MBA)",
+      "Doctor of Philosophy (PhD)"
+    ]
+  },
+  {
+    "id": "uni9",
+    "name": "Savitribai Phule Pune University, Pune",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Arts (BA)",
+      "Master of Science (MSc)",
+      "Master of Arts (MA)"
+    ]
+  },
+  {
+    "id": "uni10",
+    "name": "University of Hyderabad, Hyderabad",
+    "courses": [
+      "Integrated MSc-PhD",
+      "Master of Technology (MTech)",
+      "Master of Science (MSc)",
+      "Doctor of Philosophy (PhD)"
+    ]
+  },
+  {
+    "id": "uni11",
+    "name": "Kalinga Institute of Industrial Technology (KIIT), Bhubaneswar",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Bachelor of Dental Surgery (BDS)",
+      "Master of Technology (MTech)",
+      "Master of Business Administration (MBA)"
+    ]
+  },
+  {
+    "id": "uni12",
+    "name": "Birla Institute of Technology & Science, Pilani",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Master of Science (MSc)",
+      "Master of Business Administration (MBA)",
+      "PhD"
+    ]
+  },
+  {
+    "id": "uni13",
+    "name": "Lovely Professional University, Phagwara",
+    "courses": [
+      "Bachelor of Commerce (BCom)",
+      "Bachelor of Business Administration (BBA)",
+      "Master of Science (MSc)",
+      "Master of Education (MEd)"
+    ]
+  },
+  {
+    "id": "uni14",
+    "name": "Manipal Academy of Higher Education, Manipal",
+    "courses": [
+      "Bachelor of Medicine (MBBS)",
+      "Bachelor of Technology (BTech)",
+      "Master of Business Administration (MBA)",
+      "PhD"
+    ]
+  },
+  {
+    "id": "uni15",
+    "name": "Amrita Vishwa Vidyapeetham, Coimbatore",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Master of Computer Applications (MCA)",
+      "Master of Business Administration (MBA)",
+      "PhD"
+    ]
+  },
+  {
+    "id": "uni16",
+    "name": "University of Calcutta, Kolkata",
+    "courses": [
+      "Bachelor of Arts (BA)",
+      "Bachelor of Science (BSc)",
+      "Master of Arts (MA)",
+      "Master of Commerce (MCom)"
+    ]
+  },
+  {
+    "id": "uni17",
+    "name": "Panjab University, Chandigarh",
+    "courses": [
+      "Bachelor of Laws (LLB)",
+      "Bachelor of Science (BSc)",
+      "Master of Science (MSc)",
+      "Master of Technology (MTech)"
+    ]
+  },
+  {
+    "id": "uni18",
+    "name": "Osmania University, Hyderabad",
+    "courses": [
+      "Bachelor of Arts (BA)",
+      "Bachelor of Business Administration (BBA)",
+      "Master of Arts (MA)",
+      "Master of Business Administration (MBA)"
+    ]
+  },
+  {
+    "id": "uni19",
+    "name": "University of Lucknow, Lucknow",
+    "courses": [
+      "Bachelor of Commerce (BCom)",
+      "Bachelor of Science (BSc)",
+      "Master of Commerce (MCom)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni20",
+    "name": "University of Jammu, Jammu",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Arts (BA)",
+      "Master of Science (MSc)",
+      "Master of Arts (MA)"
+    ]
+  },
+  {
+    "id": "uni21",
+    "name": "Sri Venkateswara University, Tirupati",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Commerce (BCom)",
+      "Master of Science (MSc)",
+      "Master of Commerce (MCom)"
+    ]
+  },
+  {
+    "id": "uni22",
+    "name": "Tata Institute of Social Sciences (TISS), Mumbai",
+    "courses": [
+      "Master of Social Work (MSW)",
+      "Master of Public Policy (MPP)",
+      "Master of Arts (MA)",
+      "Doctor of Philosophy (PhD)"
+    ]
+  },
+  {
+    "id": "uni23",
+    "name": "Shiv Nadar University, Gautam Buddha Nagar",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Environmental Science (BEnvSc)",
+      "Master of Science (MSc)",
+      "Master of Business Administration (MBA)"
+    ]
+  },
+  {
+    "id": "uni24",
+    "name": "Christ University, Bengaluru",
+    "courses": [
+      "Bachelor of Commerce (BCom)",
+      "Bachelor of Science (BSc)",
+      "Master of Commerce (MCom)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni25",
+    "name": "Gauhati University, Guwahati",
+    "courses": [
+      "Bachelor of Arts (BA)",
+      "Bachelor of Science (BSc)",
+      "Master of Arts (MA)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni26",
+    "name": "University of Madras, Chennai",
+    "courses": [
+      "Bachelor of Arts (BA)",
+      "Bachelor of Commerce (BCom)",
+      "Master of Arts (MA)",
+      "Master of Commerce (MCom)"
+    ]
+  },
+  {
+    "id": "uni27",
+    "name": "Visvesvaraya Technological University, Belgaum",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Master of Technology (MTech)",
+      "Bachelor of Architecture (BArch)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni28",
+    "name": "Delhi Technological University, New Delhi",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Master of Technology (MTech)",
+      "Master of Business Administration (MBA)",
+      "Doctor of Philosophy (PhD)"
+    ]
+  },
+  {
+    "id": "uni29",
+    "name": "Indira Gandhi National Open University (IGNOU), New Delhi",
+    "courses": [
+      "Bachelor of Arts (BA)",
+      "Bachelor of Science (BSc)",
+      "Master of Arts (MA)",
+      "Diploma in Open & Distance Learning"
+    ]
+  },
+  {
+    "id": "uni30",
+    "name": "Manipal University Jaipur, Jaipur",
+    "courses": [
+      "Bachelor of Design (BDes)",
+      "Bachelor of Technology (BTech)",
+      "Master of Design (MDes)",
+      "Master of Business Administration (MBA)"
+    ]
+  },
+  {
+    "id": "uni31",
+    "name": "Sri Balaji Vidyapeeth, Puducherry",
+    "courses": [
+      "Bachelor of Medicine (MBBS)",
+      "Bachelor of Pharmacy (BPharm)",
+      "Master of Science (MSc)",
+      "Doctor of Philosophy (PhD)"
+    ]
+  },
+  {
+    "id": "uni32",
+    "name": "Shoolini University of Biotechnology & Management Sciences, Solan",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Technology (BTech)",
+      "Master of Science (MSc)",
+      "Master of Technology (MTech)"
+    ]
+  },
+  {
+    "id": "uni33",
+    "name": "Mysore University, Mysore",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Arts (BA)",
+      "Master of Science (MSc)",
+      "Master of Arts (MA)"
+    ]
+  },
+  {
+    "id": "uni34",
+    "name": "Bharathiar University, Coimbatore",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Technology (BTech)",
+      "Master of Science (MSc)",
+      "Doctor of Philosophy (PhD)"
+    ]
+  },
+  {
+    "id": "uni35",
+    "name": "Christ (Deemed to be) University, Bengaluru",
+    "courses": [
+      "Bachelor of Commerce (BCom)",
+      "Bachelor of Science (BSc)",
+      "Master of Commerce (MCom)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni36",
+    "name": "Sri Ramachandra Institute of Higher Education & Research, Chennai",
+    "courses": [
+      "Bachelor of Medicine (MBBS)",
+      "Master of Pharmacy (MPharm)",
+      "Master of Business Administration (MBA)",
+      "Doctor of Philosophy (PhD)"
+    ]
+  },
+  {
+    "id": "uni37",
+    "name": "Tezpur University, Tezpur",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Bachelor of Science (BSc)",
+      "Master of Technology (MTech)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni38",
+    "name": "Madan Mohan Malaviya University of Technology, Gorakhpur",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Master of Technology (MTech)",
+      "Doctor of Philosophy (PhD)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni39",
+    "name": "Kalasalingam Academy of Research & Education, Srivilliputhur",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Master of Technology (MTech)",
+      "Bachelor of Science (BSc)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni40",
+    "name": "Central University of Tamil Nadu, Thiruvarur",
+    "courses": [
+      "Bachelor of Arts (BA)",
+      "Master of Arts (MA)",
+      "PhD",
+      "Bachelor of Business Administration (BBA)"
+    ]
+  },
+  {
+    "id": "uni41",
+    "name": "Sharda University, Greater Noida",
+    "courses": [
+      "Bachelor of Commerce (BCom)",
+      "Master of Science (MSc)",
+      "Bachelor of Business Administration (BBA)",
+      "Master of Business Administration (MBA)"
+    ]
+  },
+  {
+    "id": "uni42",
+    "name": "G.B. Pant University of Agriculture & Technology, Pantnagar",
+    "courses": [
+      "Bachelor of Science in Agriculture (BSc Agri)",
+      "Master of Science in Agriculture (MSc Agri)",
+      "Doctor of Philosophy (PhD)",
+      "Bachelor of Technology in Agriculture Engineering (BTech AgriEng)"
+    ]
+  },
+  {
+    "id": "uni43",
+    "name": "Shiv Nadar University, Uttar Pradesh",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Master of Science (MSc)",
+      "Bachelor of Business Administration (BBA)",
+      "Master of Business Administration (MBA)"
+    ]
+  },
+  {
+    "id": "uni44",
+    "name": "Christ University, Bengaluru",
+    "courses": [
+      "Bachelor of Commerce (BCom)",
+      "Bachelor of Arts (BA)",
+      "Master of Commerce (MCom)",
+      "Master of Arts (MA)"
+    ]
+  },
+  {
+    "id": "uni45",
+    "name": "University of Kashmir, Srinagar",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Arts (BA)",
+      "Master of Science (MSc)",
+      "Master of Arts (MA)"
+    ]
+  },
+  {
+    "id": "uni46",
+    "name": "Sri Venkateswara University, Tirupati",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Commerce (BCom)",
+      "Master of Science (MSc)",
+      "Master of Commerce (MCom)"
+    ]
+  },
+  {
+    "id": "uni47",
+    "name": "Maharishi Markandeshwar University, Ambala",
+    "courses": [
+      "Bachelor of Engineering (BE)",
+      "Master of Engineering (ME)",
+      "Bachelor of Science (BSc)",
+      "Master of Science (MSc)"
+    ]
+  },
+  {
+    "id": "uni48",
+    "name": "Koneru Lakshmaiah Education Foundation University, Vaddeswaram",
+    "courses": [
+      "Bachelor of Technology (BTech)",
+      "Master of Technology (MTech)",
+      "Master of Business Administration (MBA)",
+      "Doctor of Philosophy (PhD)"
+    ]
+  },
+  {
+    "id": "uni49",
+    "name": "UPES (University of Petroleum & Energy Studies), Dehradun",
+    "courses": [
+      "Bachelor of Science (BSc)",
+      "Bachelor of Technology (BTech)",
+      "Master of Science (MSc)",
+      "Master of Technology (MTech)"
+    ]
+  },
+  {
+    "id": "uni50",
+    "name": "International Institute of Information Technology, Hyderabad",
+    "courses": [
+      "Bachelor of Technology in Computer Science (BTech CS)",
+      "Master of Technology (MTech)",
+      "Master of Science (MSc)",
+      "Doctor of Philosophy (PhD)"
+    ]
+  }
+]

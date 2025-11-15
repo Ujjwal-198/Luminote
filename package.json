@@ -1,0 +1,23 @@
+{
+  "name": "luminote",
+  "version": "1.0.0",
+  "description": "Academic document sharing platform for students",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start": "npm start --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "install-all": "npm install && npm install --prefix frontend && npm install --prefix backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["academic", "documents", "sharing", "students", "education", "notes", "assignments"],
+  "author": "Ujjwal Singh <kumarujjwalsingh76@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ujjwal-198/ScholarSync.git"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
