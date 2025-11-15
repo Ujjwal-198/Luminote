@@ -11,6 +11,10 @@ export const handleSignup = async (req, res) => {
         console.log('Request body type:', typeof req.body);
         console.log('Request body keys:', Object.keys(req.body || {}));
         console.log('Full request body:', JSON.stringify(req.body, null, 2));
+        console.log('Request body stringified:', JSON.stringify(req.body));
+        console.log('Request body direct:', req.body);
+        console.log('Body has university?', 'university' in req.body);
+        console.log('Body university value:', req.body.university);
         
         const { name, email, password, university, course, branch } = req.body;
         console.log('Destructured values:');
