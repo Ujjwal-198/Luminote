@@ -7,7 +7,7 @@ import { FaBookOpen, FaUser, FaUniversity, FaCheck, FaArrowRight, FaArrowLeft, F
 
 function Step1({ register, errors, clearErrorOnInput }) {
     const [showPassword, setShowPassword] = useState(false);
-    
+
     return (
         <div className='space-y-6'>
             <div className='text-center mb-6'>
@@ -93,19 +93,19 @@ function Step2({ register, errors, clearErrorOnInput }) {
 
             <div className='space-y-4'>
                 <div>
-                    <label htmlFor="universityName" className='block text-sm font-medium text-gray-300 mb-2'>University/College</label>
+                    <label htmlFor="university" className='block text-sm font-medium text-gray-300 mb-2'>University/College</label>
                     <input
                         type="text"
-                        id="universityName"
-                        {...register("universityName", { required: "University name is required" })}
+                        id="university"
+                        {...register("university", { required: "University name is required" })}
                         onChange={(e) => {
                             clearErrorOnInput();
-                            register('universityName').onChange(e);
+                            register('university').onChange(e);
                         }}
                         className='w-full px-4 py-3 bg-zinc-900 border border-zinc-600 rounded-lg text-gray-200 placeholder-gray-500 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition duration-300'
                         placeholder="Enter your university/college name"
                     />
-                    {errors.universityName && <p className='text-red-500 text-sm mt-1'>{errors.universityName.message}</p>}
+                    {errors.university && <p className='text-red-500 text-sm mt-1'>{errors.university.message}</p>}
                 </div>
 
                 <div>
@@ -146,7 +146,7 @@ function Step2({ register, errors, clearErrorOnInput }) {
 
 function Step3({ getValues }) {
     const userData = getValues();
-    
+
     return (
         <div className='space-y-6'>
             <div className='text-center mb-6'>
@@ -175,7 +175,7 @@ function Step3({ getValues }) {
                         Academic Information
                     </h3>
                     <div className='space-y-2 text-sm'>
-                        <p><span className='text-gray-400'>University:</span> <span className='text-gray-200'>{userData.universityName}</span></p>
+                        <p><span className='text-gray-400'>University:</span> <span className='text-gray-200'>{userData.university}</span></p>
                         <p><span className='text-gray-400'>Course:</span> <span className='text-gray-200'>{userData.course}</span></p>
                         <p><span className='text-gray-400'>Branch:</span> <span className='text-gray-200'>{userData.branch}</span></p>
                     </div>
@@ -213,7 +213,7 @@ const Register = () => {
         if (currentStep === 0) {
             fieldsToValidate = ['name', 'email', 'password'];
         } else if (currentStep === 1) {
-            fieldsToValidate = ['universityName', 'course', 'branch'];
+            fieldsToValidate = ['university', 'course', 'branch'];
         }
 
         const isValid = await trigger(fieldsToValidate);
@@ -264,15 +264,15 @@ const Register = () => {
                         <div key={step} className='flex items-center'>
                             <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium ${
                                 step <= currentStep 
-                                    ? 'bg-orange-600 text-white' 
+                                    ? 'bg-orange-600 text-white'
                                     : 'bg-zinc-700 text-gray-400'
-                            }`}>
+                                }`}>
                                 {step + 1}
                             </div>
                             {step < 2 && (
                                 <div className={`w-12 h-1 mx-2 ${
                                     step < currentStep ? 'bg-orange-600' : 'bg-zinc-700'
-                                }`} />
+                                    }`} />
                             )}
                         </div>
                     ))}
@@ -295,7 +295,7 @@ const Register = () => {
                                 onClick={() => setCurrentStep(currentStep - 1)}
                                 className={`flex items-center gap-2 px-4 py-2 border border-zinc-600 text-gray-300 rounded-lg hover:bg-zinc-700 transition duration-300 ${
                                     currentStep === 0 ? 'invisible' : ''
-                                }`}
+                                    }`}
                             >
                                 <FaArrowLeft />
                                 Back
