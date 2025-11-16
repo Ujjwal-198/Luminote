@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { handleGetUser } from './features/userSlice.js';
 import ProtectedRoutes from './Components/ProtectedRoutes.jsx';
+import { WelcomeModal } from './Components/index.js';
 import { Home, Explore, Upload, Signup, Login, Dashboard, Profile, Unauthorized, UploadDetails, Register, UserUploads, AllUploads, About } from './Pages/index.js';
 import { Notes, Assignment, Ebook, Essays, LabManual, Lecture, Misc, Practice, Practical, QuestionPaper, Slides, StudyGuide, Syllabus, Tutorial } from './Pages/Explore-subPages/index.js';
 function App() {
@@ -33,6 +34,7 @@ function App() {
   return (
     <RedirectHandler>
       <div style={{ width: '100%', minHeight: '100vh', fontSize: '16px' }}>
+        <WelcomeModal />
         <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />

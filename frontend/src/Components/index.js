@@ -13,5 +13,6 @@ import ScrollToTop from "./ScrollToTop.jsx";
 import DashboardOverviewCards from "./DashboardOverviewCards.jsx";
 import NothingFound from "./NothingFound.jsx";
 import ErrorBoundary from "./ErrorBoundary.jsx";
+import WelcomeModal from "./WelcomeModal.jsx";
 
-export { Header, Footer, ExploreCard, Pagination, Button, FileUploader, Loading, ProtectedRoutes, RecentUploads, DocumentCard, NoUploadsYet, ScrollToTop, DashboardOverviewCards, NothingFound, ErrorBoundary };
+export { Header, Footer, ExploreCard, Pagination, Button, FileUploader, Loading, ProtectedRoutes, RecentUploads, DocumentCard, NoUploadsYet, ScrollToTop, DashboardOverviewCards, NothingFound, ErrorBoundary, WelcomeModal };
