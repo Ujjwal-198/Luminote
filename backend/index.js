@@ -31,6 +31,9 @@ process.on('unhandledRejection', (reason, promise) => {
 
 const app = express()
 
+// Trust proxy for rate limiting on Render
+app.set('trust proxy', 1)
+
 app.use(generalLimiter)
 
 app.use((req, res, next) => {
