@@ -37,9 +37,9 @@ const FileUploader = () => {
             <div className='flex flex-col gap-y-5 align-middle justify-center items-center border border-dashed p-10 w-full border-gray-600 bg-zinc-900 rounded-xl'>
                 <div className='flex flex-col align-middle items-center gap-y-2 justify-center'>
                     <IoMdCloudUpload className='text-4xl text-gray-100' />
-                    <h1 className='text-gray-100 md:text-2xl text-xl md:font-medium'>Drag & Drop File</h1>
+                    <h1 className='text-gray-100 md:text-2xl text-xl md:font-medium'>Upload Files</h1>
                 </div>
-                <p className='text-gray-100 text-sm'>Or If you want to upload a file</p>
+                <p className='text-gray-100 text-sm'>Click the button below to upload files</p>
                 <label className='bg-orange-600 px-4 py-2 rounded-full text-sm cursor-pointer hover:shadow-lg transition duration-300 text-white hover:bg-orange-700'>
                     Choose File
                     <input
