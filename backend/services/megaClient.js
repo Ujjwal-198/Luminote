@@ -27,6 +27,9 @@ export async function getStorage() {
         if (error.code === 'ENOTFOUND' || error.message.includes('fetch failed')) {
             throw new Error('MEGA service is currently unavailable. Please check your internet connection.');
         }
+        if (error.message.includes('EBLOCKED') || error.message.includes('User blocked')) {
+            throw new Error('MEGA account is temporarily blocked. File downloads are currently unavailable.');
+        }
         throw error;
     }
 }
